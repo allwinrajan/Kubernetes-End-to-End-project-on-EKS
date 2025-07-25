@@ -4,7 +4,7 @@ This guide walks you through deploying the classic 2048 game on an Amazon EKS cl
 
 ---
 
-## ✅ Prerequisites
+## Prerequisites
 
 Before proceeding, ensure the following:
 
@@ -16,7 +16,7 @@ Before proceeding, ensure the following:
 
 ---
 
-## 🚀 Step 1: Create a Fargate Profile
+## Step 1: Create a Fargate Profile
 
 Run the following command to create a Fargate profile specifically for the 2048 application:
 
@@ -32,7 +32,7 @@ This profile ensures that all pods deployed in the `game-2048` namespace run on 
 
 ---
 
-## 🚀 Step 2: Deploy the 2048 App with Ingress
+## Step 2: Deploy the 2048 App with Ingress
 
 Apply the Kubernetes manifests that define the 2048 Deployment, Service, and Ingress using the command below:
 
@@ -47,7 +47,7 @@ This manifest includes:
 
 ---
 
-## ✅ Verification
+## Verification
 
 To verify the deployment:
 1. Check pod status:
@@ -63,7 +63,7 @@ You should see an ALB address in the `ADDRESS` field of the Ingress. Visit it in
 
 ---
 
-## 🧠 Notes
+## Notes
 
 - This setup uses **AWS Fargate**, which abstracts the need to manage worker nodes.
 - Ensure your Ingress annotations match the requirements of the AWS Load Balancer Controller.
@@ -71,7 +71,7 @@ You should see an ALB address in the `ADDRESS` field of the Ingress. Visit it in
 
 ---
 
-## 📁 Reference
+## Reference
 
 - [AWS Load Balancer Controller GitHub](https://github.com/kubernetes-sigs/aws-load-balancer-controller)
 - [2048 App Example](https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/v2.5.4/docs/examples/2048/2048_full.yaml)
