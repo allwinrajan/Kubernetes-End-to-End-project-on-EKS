@@ -9,7 +9,7 @@ Before creating an Amazon EKS cluster, ensure the following tools are installed 
 ### 1. `kubectl`
 A command-line tool for interacting with Kubernetes clusters.
 
-- [Installing or updating kubectl](https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html)
+- [Installing or updating kubectl](https://kubernetes.io/docs/tasks/tools/)
 
 ---
 
